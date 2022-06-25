@@ -1,0 +1,14 @@
+Java derleyicisi bir sınıfı bayt koduna dönüştürdüğünde, önce bir parent class'a bakmalıdır.
+
+Bunun nedeni, classların altındaki implementation'ın, ilgili yöntemleri ve alanları tutan parent class'ın bayt kodunu işaret etmesidir.
+
+Ardından, child class işlevlerinin koduna pointers ekler.
+(bazıları 'implements' anahtar kelimesi tarafından zorunlu kılınmıştır.)
+
+Parent class'ın derlenebilir olması gerektiği için, derleyicinin o sınıfın ne olduğunu önceden bilmesi daha kolaydır.
+
+Ayrıca, yalnızca bir sınıfı extend edilebilir ancak istenilen sayıda interfaces implement edilebilir.
+
+Extends anahtar sözcüğü herhangi bir sayıda implement talimatı arasında karıştırılabilirse, derleme süresi artar.
+
+Derleyiciler, geliştirme süresini azaltmak için olabildiğince hızlı başarısız olmak isterler, bu nedenle bu seçim mantıklıdır.

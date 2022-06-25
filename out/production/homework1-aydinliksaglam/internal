@@ -1,0 +1,7 @@
+Internal
+
+Internal, kendi projesi içerisinde public, farklı bir projeden/dışarıdan çağırılmak istenildiğinde ise
+private özelliklerini taşır. Yani aynı projeden çağırabiliriz ama başka projeden çağıramayız.
+
+Internal ile tanımlanan bir sınıf ya da değişkene aynı Public gibi proje içerisinde ya da
+Namespace içerisinden erişilebilir fakat başka projeden çağrılamaz.
